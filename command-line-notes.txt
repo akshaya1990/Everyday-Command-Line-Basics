@@ -1,0 +1,115 @@
+
+Navigating, creating, deleting, updating directories and files:
+---------------------------------------------------------------
+echo $0 -> prints the current shell program running
+
+dir -> List the directory.
+
+mkdir <name of the directory> -> This creates a folder/directory.
+
+rmdir <name of the directory> -> This removes the directory specified.
+
+rm -r <name of the directory> -> This deletes the directory specified.
+
+rm -rf <name of the directory> -> This forcefully deletes the directory specified.
+
+touch <name of the file with its extension> Ex: touch note.txt -> This creates a file.
+
+rm <name of the file with its extension> Ex: rm note.txt -> Deletes the file specified.
+
+start <name of the file with its extension> [Windows] or Open <name of the file with its extension> [Mac OS X] -> Opens the file specified.
+
+fc "file_1_path" "file_2_path" -> compare two files specified.
+
+ctrl + c -> stops the execution of a command.
+
+ctrl + z -> suspends the running program.
+
+echo -> Shows custom messages and messages from a script or file. can also be used to create a file if one doesnt exist. [ex: echo "some text" > sample.txt
+or echo "some text" >> sample.txt. The difference between > and >> is that > overwrites the file if it exists whereas >> appends to the existing file.
+
+move a b -> 'a' can be file or folder and b is a folder. Moves the file specified into the folder specified.
+
+cat <file name> -> used to view the contents of the file specified.
+
+cat > <file name> -> used to create the file with the specified name.
+
+mv <file name> <directory name> -> used to move the file into the specified directory.
+
+clear -> To clear the terminal.
+
+tab -> To autocomplete the line.
+
+↑ and ↓ -> To cycle through previous commands.
+
+~/.bash_profile -> name of file used to store environment settings. It is commonly called the “bash profile”. When a session starts, it will load the contents of the bash profile before executing commands.
+
+source ~/.bash_profile -> source activates the changes in ~/.bash_profile for the current session. Instead of closing the terminal and needing to start a new session, source makes the changes available right away in the session we are in.
+
+alias pd="pwd" -> The alias command allows you to create keyboard shortcuts, or aliases, for commonly used commands.
+
+cp * Documents/ -> wildcard * selects all of the files in the current directory. The above example will copy all of the files in the current directory to the directory called Documents. There are other types of wildcards, too, which are beyond the scope of this glossary.
+
+grep "Mount" mountains.txt -> grep stands for “global regular expression print”. It searches files for lines that match a pattern and returns the results. It is case sensitive.
+
+grep -i "Mount" mountains.txt -> grep -i enables the command to be case insensitive.
+
+grep -R <"search term"> -> searches all files in a directory, including its subdirectories, and outputs filenames and lines containing matched results.
+
+ls -> lists contents in a directory
+
+ls -a -> lists all contents including hiddden files and directories
+
+ls -l -> lists all contents in long format
+
+ls -t -> lists all the contents by the time they were modified
+
+ls -R -> Lists all the contents in a directory and its subdirectories recursively
+
+| -> This command is called a pipe. It is used to pipe, or transfer, the standard output from the command on its left into the standard input of the command on its right. [ Ex: echo "Akshaya is from India" | wc -w]
+
+wc <filepath> -> used to count the no of lines, words, chars
+
+wc -w <-> counts the no of words. This can be used with the pipe command too. [Ex: echo "hello world" | wc -w ]
+
+wc -l -> counts the no of lines
+
+wc -m -> counts the no of char
+
+Copying text from the terminal can be done with ctrl+shift+c and pasting can be done with ctrl+shift+v
+
+env -> returns a list of the environment variables for the current user.
+
+uniq lakes.txt -> uniq, short for “unique”, takes a filename or standard input and prints out every line, removing any exact duplicates.
+
+nano hello.txt -> nano is a command line text editor. It works just like a desktop text editor like TextEdit or Notepad, except that it is accessible from the command line and only accepts keyboard input.
+
+sed 's/snow/rain/' forests.txt -> sed stands for “stream editor”. It accepts standard input and modifies it based on an expression, before displaying it as output data.
+
+In the expression 's/snow/rain/':
+
+s: stands for “substitution”.
+snow: the search string, the text to find.
+rain: the replacement string, the text to add in place.
+
+
+Networking commands:
+--------------------
+
+netstat -an -> Shows Open ports, IP Addresses and their States.
+
+ping "www.google.com" -> Shows IP address and the time it takes to transmit data and get a response.
+
+ipconfig -> Shows information about PC IP address and connections.
+
+
+Resources -
+Understanding Console, CLI, Terminal and shell - https://www.freecodecamp.org/news/command-line-for-beginners/
+
+Command line cheetsheet - 
+https://www.codecademy.com/article/command-line-commands
+https://www.codecademy.com/learn/learn-the-command-line/modules/learn-the-command-line-navigation/cheatsheet
+https://www.codecademy.com/learn/learn-the-command-line/modules/learn-the-command-line-manipulation/cheatsheet
+
+Detailed resource -
+https://www.learnenough.com/command-line-tutorial/basics
